@@ -3,6 +3,9 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 import json
 
+from openai import OpenAI
+from core.api_keys import api_key
+
 def home(request):
     return HttpResponse("Welcome to the Chatbot API!")
 
